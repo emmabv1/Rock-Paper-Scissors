@@ -1,0 +1,22 @@
+body {
+    font-family: 'Gorditas', cursive;
+    text-align: center;
+    background: url(../images/doodles.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.container {
+    margin-top: 5%;
+}
+
+img {
+    width: 250px;
+    height: 250px;
+}
+
+#img2 {
+    margin-left: auto;
+}

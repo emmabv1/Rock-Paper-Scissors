@@ -6,17 +6,62 @@
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
     crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Gorditas" rel="stylesheet">
     </head>
 
     <body>
         <main class="container">
             <div class="jumbotron">
-                
+                <h1>Rock Paper Scissors!</h1>
+                <div class="row">
+                    <div class="col">
+                        <div class="row">
+                            <div id="name1"></div>
+                        </div>
+                        <div class="row">
+                            <img id="img1" src="assets/images/rpsandroid.png">
+                        </div>
+                        <div class="row">
+                            <input class="form-control" type="text" id="player1" placeholder="Enter Your Name">
+                        </div>
+                        <div class="row">
+                            <button type="submit" id="submit1"class="btn btn-info">Add Player 1</button>
+                            <button class="choice1" value="r">R</button>
+                            <button class="choice1" value="p">P</button>
+                            <button class="choice1" value="s">S</button>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row">
+                            <button id="compare">Results</button>
+                        </div>
+                        <div id="results" class="row"></div>
+                        
+                    </div>
+                    <div class="col">
+                        <div class="row">
+                            <div id="name2"></div>
+                        </div>
+                        <div class="row">
+                            <img id="img2" src="assets/images/rpsandroid.png">
+                        </div>
+                        <div class="row">
+                            <input class="form-control" type="text" id="player2" placeholder="Enter Your Name">
+                        </div>
+                        <div class="row"></div>
+                            <button class="choice2" value="r">R</button>
+                            <button class="choice2" value="p">P</button>
+                            <button class="choice2" value="s">S</button>    
+                            <button type="submit" id="submit2" class="btn btn-info">Add Player 2</button>
+                        </div>
+                        
+                    </div>
+                </div>
             </div>
         </main>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script type="text/javascript" src="assets/javascript/game.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
     </body>
 </html>
